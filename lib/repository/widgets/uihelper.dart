@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
 class Uihelper {
@@ -39,7 +37,7 @@ class Uihelper {
         controller: controller,
         decoration: InputDecoration(
           hintText: "Search \"ice-cream\"",
-          
+
           prefixIcon: Icon(Icons.search, color: Colors.black),
           suffixIcon: Row(
             mainAxisSize: MainAxisSize.min,
