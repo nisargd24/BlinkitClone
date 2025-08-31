@@ -1,20 +1,14 @@
-import 'package:blinkit/repository/widgets/appbar/appbar.dart';
 import 'package:blinkit/repository/widgets/uihelper.dart';
 import 'package:flutter/material.dart';
 
 class CategoryScreen extends StatelessWidget {
-  CategoryScreen({super.key});
+  TextEditingController searchController = TextEditingController();
   var grocerykitchen = [
     {"img": "image 41.png", "text": "Vegetables & \nFruits"},
     {"img": "image 42.png", "text": "Atta, Dal & \nRice"},
     {"img": "image 43.png", "text": "Oil, Ghee & \nMasala"},
-    {"img": "image 44.png", "text": "Dairy, Bread & \nMilk"},
-    {"img": "image 45.png", "text": "Biscuits & \nBakery"},
-    {"img": "image 21.png", "text": "Dry Fruits &\n Cereals"},
-    {"img": "image 22.png", "text": "Kitchen &\n Appliances"},
-    {"img": "image 23.png", "text": "Tea & \nCoffees"},
-    {"img": "image 24.png", "text": "Ice Creams & \nmuch more"},
-    {"img": "image 25.png", "text": "Noodles & \nPacket Food"},
+    {"img": "image 44 (1).png", "text": "Dairy, Bread & \nMilk"},
+    {"img": "image 45 (1).png", "text": "Biscuits & \nBakery"},
   ];
   var secondgrocery = [
     {"img": "image 21.png", "text": "Dry Fruits &\n Cereals"},
@@ -22,11 +16,6 @@ class CategoryScreen extends StatelessWidget {
     {"img": "image 23.png", "text": "Tea & \nCoffees"},
     {"img": "image 24.png", "text": "Ice Creams & \nmuch more"},
     {"img": "image 25.png", "text": "Noodles & \nPacket Food"},
-    {"img": "image 41.png", "text": "Vegetables & \nFruits"},
-    {"img": "image 42.png", "text": "Atta, Dal & \nRice"},
-    {"img": "image 43.png", "text": "Oil, Ghee & \nMasala"},
-    {"img": "image 44.png", "text": "Dairy, Bread & \nMilk"},
-    {"img": "image 45.png", "text": "Biscuits & \nBakery"},
   ];
   var snacksanddrinks = [
     {"img": "image 31.png", "text": "Chips &\n Namkeens"},
@@ -46,12 +35,6 @@ class CategoryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Color(0xFFF7CB45),
-        toolbarHeight: 160,
-        title: Appbar(),
-        automaticallyImplyLeading: false,
-      ),
       body: Column(
         children: [
           SizedBox(height: 40),
