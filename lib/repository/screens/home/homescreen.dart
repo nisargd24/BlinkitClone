@@ -1,4 +1,6 @@
 import 'package:blinkit/repository/widgets/appbar/appbar.dart';
+import 'package:blinkit/repository/widgets/diwalisalebox/diwalisale.dart';
+import 'package:blinkit/repository/widgets/itemwithaddbutton/item.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -14,7 +16,17 @@ class HomeScreen extends StatelessWidget {
           title: Appbar(),
           automaticallyImplyLeading: false,
         ),
-        body: Center(child: Text("Welcome to the Home Screen")),
+        body: Scaffold(
+          body: Padding(
+            padding: const EdgeInsets.only(top: 2),
+            child: Column(
+              children: [
+                DiwaliSale(),
+                ItemWithAddButton(imagePath: "candle.png"),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }
